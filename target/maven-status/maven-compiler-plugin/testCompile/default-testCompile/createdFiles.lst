@@ -1,0 +1,6 @@
+Yelp/pageobject/LoginPage.class
+Yelp/pageobject/BurgerMenu.class
+Yelp/pageobject/MainPage.class
+Yelp/steps/YelpUser.class
+Yelp/stepsdefinitions/StepDefinitionUser.class
+Yelp/Runner.class
