@@ -2,8 +2,6 @@ package Yelp.pageobject;
 
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.pages.PageObject;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class BurgerMenu extends PageObject {
@@ -23,8 +21,7 @@ public class BurgerMenu extends PageObject {
     }
 
     public void goBack(){
-        WebDriver driver = new ChromeDriver();
-        driver.navigate().back();
+        getDriver().navigate().back();
     }
 
 }

@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Search Yelp
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.968 s <<< FAILURE! - in Search Yelp
-Go to product page(Search Yelp)  Time elapsed: 0.968 s  <<< ERROR!
-net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver
-Caused by: net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (Path to the driver file was not defined
-Caused by: java.lang.IllegalStateException: Path to the driver file was not defined
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 60 s - in Search Yelp

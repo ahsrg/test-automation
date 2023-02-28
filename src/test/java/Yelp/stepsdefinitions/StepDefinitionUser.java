@@ -15,23 +15,40 @@ public class StepDefinitionUser {
     @Given("^user navigates to https://www.saucedemo.com/$")
     public void userNavigateToSaucedemo(){
         user.navigatesTo();
-        Serenity.takeScreenshot();
     }
 
     @And("^login as standard user$")
     public void userLoginAsStandard(){
         user.loginAsStandard();
-        Serenity.takeScreenshot();
     }
 
     @Given("^user go to About tab$")
     public void userNavigateToAboutTab(){
         user.navigateToAboutPage();
-        Serenity.takeScreenshot();
     }
 
-    @And("^user goes back to Product page$")
+    @Then("^user goes back to Product page$")
     public void userNavigateToAProductPage(){
+        user.navigateToProductPage();
+    }
 
+    @And("^order products from lowest to highest price$")
+    public void userOrderProductsByPriceLowToHigh(){
+        user.sortProductsBy("Price (low to high)");
+    }
+
+    @Given("^user order products from highest to lowest price$")
+    public void userOrderProductsByPriceHighToLow(){
+        user.sortProductsBy("Price (high to low)");
+    }
+
+    @Then("^user add the (.*) most expensive products$")
+    public void userAddProducts(Integer productQuantity){
+        user.addNProducts(productQuantity);
+    }
+
+    @And("review that shopping cart contains (.*) products")
+    public void userReviewShoppingCart(String productQuantity){
+        user.reviewShoppingCart(productQuantity);
     }
 }

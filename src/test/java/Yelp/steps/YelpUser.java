@@ -31,4 +31,18 @@ public class YelpUser {
     public void navigateToProductPage(){
         burgerMenu.goBack();
     }
+
+    public void sortProductsBy(String sortBy){
+        mainPage.showFilterOptions();
+        mainPage.selectFilter(sortBy);
+    }
+
+    public void addNProducts(Integer quantity){
+        mainPage.addProducts(quantity);
+    }
+
+    public void reviewShoppingCart(String quantity){
+        mainPage.shoppingCartHaveNProducts(quantity);
+    }
+
 }
