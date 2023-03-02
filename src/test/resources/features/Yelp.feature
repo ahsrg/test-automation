@@ -9,11 +9,13 @@ Feature: Search Yelp
     Then user goes back to Product page
     And order products from lowest to highest price
 
-  Scenario Outline: Buy the 4 most expensive products
+  Scenario Outline: Buy the most expensive products
 
     Given user order products from highest to lowest price
-    Then user add the <productQuantity> most expensive products
+    Then user add to cart the <productQuantity> most expensive products
     And review that shopping cart contains <productQuantity> products
+    Then user go to shopping cart
+    And complete checkout process
 
     Examples:
       |productQuantity|

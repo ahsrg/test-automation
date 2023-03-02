@@ -104,7 +104,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Search Yelp","type":"feature","href":"4b1aa1e9e42c1ff2571c935b99f3627b5ade7e1c75aee2363ce23c2df15611be.html","nodes":[],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Search Yelp","type":"feature","href":"4b1aa1e9e42c1ff2571c935b99f3627b5ade7e1c75aee2363ce23c2df15611be.html","nodes":[],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e2 scenarios\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -170,7 +170,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-02-2023 11:14</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 01-03-2023 21:06</span>
     <br style="clear:left"/>
 </div>
 
@@ -240,7 +240,16 @@
 
 
                                                             </td>
-                                                            <td style="width:1%;"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                               
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="width:99%;" class="toc-title"><a href="#2eede4d8b3b38dfbcb04ca8157f3ea4959882c06f57e7d21dfdc6fd01f397660">Buy the 4 most expensive products</a>
+                                                                     (1 example)
+
+                                                            </td>
+                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
                                                                
                                                             </td>
                                                         </tr>
@@ -276,7 +285,7 @@
 
 
                                                 <div class="scenario-docs card" id="f9adc5ff2f16de0f04f85e7d2a67fd8a415937690565c17c6713fd9336e29878">
-                                                    <div class="scenario-docs card-header error" style="min-height:1.5em;">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
                                                         <div>
                                                             <span class="scenario-heading">
                                                                 Go to product page
@@ -284,7 +293,7 @@
                                                             <span class="scenario-result-icon">
                                                                 
 
-                                                                    <i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i>
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
                                                             </span>
                                                         </div>
                                                         <div class="scenario-report-badges">
@@ -293,8 +302,48 @@
                                                     </div>
                                                     <div class="scenario-docs card-body">
                                                             <p>Given user go to About tab</p>
-                                                            <p>And user goes back to Product page</p>
+                                                            <p>Then user goes back to Product page</p>
+                                                            <p>And order products from lowest to highest price</p>
                                                         <div class="examples">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="scenario-docs card" id="2eede4d8b3b38dfbcb04ca8157f3ea4959882c06f57e7d21dfdc6fd01f397660">
+                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                        <div>
+                                                            <span class="scenario-heading">
+                                                                Buy the 4 most expensive products
+                                                            </span>
+                                                            <span class="scenario-result-icon">
+                                                                
+
+                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="scenario-report-badges">
+                                                                <span class="scenario-report-badge" style="float:right;"><a href='e16946c9d47a7c00fc678c2100063e0844a089eb9486d3ff669dafeddad80178.html' class='badge more-details'>Test Results</a></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="scenario-docs card-body">
+                                                            <p>Given user order products from highest to lowest price</p>
+                                                            <p>Then user add to cart the {productQuantity} most expensive products</p>
+                                                            <p>And review that shopping cart contains {productQuantity} products</p>
+                                                            <p>Then user go to shopping cart</p>
+                                                            <p>And complete checkout process</p>
+                                                        <div class="examples">
+                                                            <p><p>Examples:</p>
+<div class='example-table-in-scenario'><table>
+<thead>
+<tr><th>productQuantity</th><th></th></tr>
+</thead>
+<tbody>
+<tr><td>4</td><td><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></td></tr>
+</tbody>
+</table></div>
+</p>
                                                         </div>
 
                                                     </div>
@@ -314,10 +363,10 @@
                                             </div>
                                             <script>
 
-                                                var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' '];
+                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 1}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                var series = [{meta: 'Passing tests (automated)', value: 2}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                 // as you saw in the previous example
@@ -354,11 +403,12 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                                    <td class="aggregate-result-count"><i
-                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="a8095658b3cbe41e68d85692b979ab77e027efed9af07f8115c6e6ddf8f22a91.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                     </td>
-                                                <td class="automated-stats">0</td>
-                                                <td class="automated-stats"> </td>
+                                                <td class="automated-stats">2</td>
+                                                <td class="automated-stats">100%</td>
                                             </tr>
                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -395,12 +445,12 @@
                                                 <td class="automated-stats">0</td>
                                                 <td class="automated-stats"> </td>
                                             <tr>
-                                                                    <td class="aggregate-result-count indented-error-category">
-                                                                        <a href="a0e30fdc06e3a8059c3f819b78b52432b1d5f50288c2bffc4df778c3d89dd92c.html"><i
-                                                                                class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken</a>
-                                                                    </td>
-                                                <td class="automated-stats">1</td>
-                                                <td class="automated-stats">100%</td>
+                                                                <td class="aggregate-result-count indented-error-category">
+                                                                    <i
+                                                                            class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken
+                                                                </td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -411,7 +461,7 @@
                                             </tr>
                                             <tr class="summary-stats">
                                                 <td class="aggregate-result-count">Total</td>
-                                                <td class="automated-stats">1</td>
+                                                <td class="automated-stats">2</td>
                                                 <td class="automated-stats"></td>
                                             </tr>
                                             </tbody>
@@ -433,11 +483,11 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td>984ms</td>
-                                                        <td>0ms</td>
-                                                        <td>984ms</td>
-                                                        <td>984ms</td>
-                                                        <td>984ms</td>
+                                                        <td> 1m 0s</td>
+                                                        <td>43s</td>
+                                                        <td>16s</td>
+                                                        <td>43s</td>
+                                                        <td>30s</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -460,16 +510,29 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <tr class="scenario-result ERROR">
+                                                <tr class="scenario-result SUCCESS">
                                                     <td>
                                                             <a href="4d2977aed585ea51726ae24667e463049ab15097ab0768c14febfd8986e072b7.html">Go to product page</a>
                                                     </td>
-                                                    <td>4</td>
-                                                    <td>11:14:40</td>
-                                                    <td>00:00</td>
+                                                    <td>5</td>
+                                                    <td>21:06:10</td>
+                                                    <td>00:43</td>
                                                     <td>
-                                                            <i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i> <span
-                                                                style="display:none">ERROR</span>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="scenario-result SUCCESS">
+                                                    <td>
+                                                            <a href="e16946c9d47a7c00fc678c2100063e0844a089eb9486d3ff669dafeddad80178.html">Buy the 4 most expensive products</a>
+                                                               (1 example)
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>21:06:54</td>
+                                                    <td>00:16</td>
+                                                    <td>
+                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
+                                                                style="display:none">SUCCESS</span>
                                                     </td>
                                                 </tr>
                                                 </tbody>

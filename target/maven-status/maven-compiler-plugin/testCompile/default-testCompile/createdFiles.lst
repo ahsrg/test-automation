@@ -1,6 +1,8 @@
+Yelp/pageobject/CartPage.class
 Yelp/pageobject/LoginPage.class
 Yelp/pageobject/BurgerMenu.class
 Yelp/pageobject/MainPage.class
+Yelp/pageobject/CheckoutFormPage.class
 Yelp/steps/YelpUser.class
 Yelp/stepsdefinitions/StepDefinitionUser.class
 Yelp/Runner.class

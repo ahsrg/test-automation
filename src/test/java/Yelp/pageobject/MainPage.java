@@ -1,15 +1,11 @@
 package Yelp.pageobject;
 
-import net.serenitybdd.core.Serenity;
 import net.serenitybdd.core.pages.WebElementFacade;
-import net.thucydides.core.pages.PageObject;
+import net.serenitybdd.core.pages.PageObject;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-import javax.sound.midi.Soundbank;
-import java.sql.SQLOutput;
 import java.util.List;
 
 public class MainPage extends PageObject {
@@ -22,6 +18,9 @@ public class MainPage extends PageObject {
 
     @FindBy(xpath="//*[@class=\"shopping_cart_badge\"]")
     WebElementFacade shoppingCartBadge;
+
+    @FindBy(xpath="//*[@class=\"shopping_cart_link\"]")
+    WebElementFacade buttonShoppingCart;
 
     static String buttonAddToCardClass = "btn btn_primary btn_small btn_inventory";
 
@@ -37,8 +36,6 @@ public class MainPage extends PageObject {
     }
 
     public void addProducts(Integer quantity){
-        buttonsToAdd.size();
-        Serenity.recordReportData().withTitle("Buttons to Add").andContents("The amount is " + buttonsToAdd.size());
         while (quantity > 0 ){
             buttonsToAdd.get(quantity-1).click();
             quantity--;
@@ -47,5 +44,9 @@ public class MainPage extends PageObject {
 
     public void shoppingCartHaveNProducts(String quantity){
         Assert.assertEquals(shoppingCartBadge.getText(), quantity);
+    }
+
+    public void goToShoppingCart(){
+        buttonShoppingCart.click();
     }
 }

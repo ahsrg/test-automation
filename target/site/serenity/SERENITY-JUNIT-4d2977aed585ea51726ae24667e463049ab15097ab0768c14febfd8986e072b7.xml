@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Search Yelp" skipped="0" tests="1" time="0.98" timestamp="2023-02-17 11:14:40"><testcase name="Go to product page"><error message="Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (Path to the driver file was not defined" type="net.thucydides.core.webdriver.UnsupportedDriverException">Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (Path to the driver file was not defined</error><system-err>Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (Path to the driver file was not defined
-Yelp.steps.YelpUser.navigatesTo(YelpUser.java:19)
-Yelp.stepsdefinitions.StepDefinitionUser.userNavigateToSaucedemo(StepDefinitionUser.java:17)
-cucumber.runner.Runner.runPickle(Runner.java:80)
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Search Yelp" skipped="0" tests="2" time="60.48" timestamp="2023-03-01 09:06:10"><testcase name="Go to product page"/><testcase name="Buy the 4 most expensive products"/></testsuite>

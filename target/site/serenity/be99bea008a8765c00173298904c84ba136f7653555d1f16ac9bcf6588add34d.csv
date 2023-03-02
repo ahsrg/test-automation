@@ -1,2 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Search Yelp","Go to product page","ERROR","2023-02-17T11:14:40.817-03:00[America/Montevideo]","0.0","0.98"
+"Search Yelp","Go to product page","SUCCESS","2023-03-01T21:06:10.175-03:00[America/Montevideo]","0.0","43.79"
+"Search Yelp","Buy the 4 most expensive products","SUCCESS","2023-03-01T21:06:54.053-03:00[America/Montevideo]","0.0","16.68"

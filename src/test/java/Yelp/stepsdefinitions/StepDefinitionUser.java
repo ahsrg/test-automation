@@ -42,13 +42,23 @@ public class StepDefinitionUser {
         user.sortProductsBy("Price (high to low)");
     }
 
-    @Then("^user add the (.*) most expensive products$")
+    @Then("^user add to cart the (.*) most expensive products$")
     public void userAddProducts(Integer productQuantity){
         user.addNProducts(productQuantity);
     }
 
-    @And("review that shopping cart contains (.*) products")
+    @And("^review that shopping cart contains (.*) products")
     public void userReviewShoppingCart(String productQuantity){
         user.reviewShoppingCart(productQuantity);
+    }
+
+    @Then("^user go to shopping cart$")
+    public void userGoToShoppingCart(){
+        user.goToShoppingCart();
+    }
+
+    @And("^complete checkout process$")
+    public void completeCheckoutProcess(){
+        user.completeCheckout();
     }
 }
